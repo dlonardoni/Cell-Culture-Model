@@ -35,7 +35,7 @@ for index in xrange(1):
 
     G.name = "NEW_graph-all_AMPA_test_%s_%s_%d_%s" % (mAMPA, sigma, len(G), inv)
     #    Net.modWeight['U']=.2
-    HEADER =Net.NetworkMaker(recAll=0,mAMPA=mAMPA,ifNMDA=ifNMDA,replicate=False,graph=G,stp=150,stpinh=100,N=len(G.nodes()),peso=_peso,rpeso=RPESO,ts=1000*101,tipo=0,sigma=0.0005,percInh=0.2,tot=_tot,r=0,group=groupname,magnitude=magnitude,vblock=-41,kb=6,U=U)
+    HEADER =Net.NetworkMaker(recAll=2,mAMPA=mAMPA,ifNMDA=ifNMDA,replicate=False,graph=G,stp=150,stpinh=100,N=len(G.nodes()),peso=_peso,rpeso=RPESO,ts=1000*101,tipo=0,sigma=0.0005,percInh=0.2,tot=_tot,r=0,group=groupname,magnitude=magnitude,vblock=-41,kb=6,U=U)
     b = 40.
     Net.INHchange_peso(PESO * 2*(1+MODIFIER))
 
